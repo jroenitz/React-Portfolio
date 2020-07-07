@@ -2,29 +2,52 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import { Button, Nav, Navbar, Form, FormControl } from 'react-bootstrap';
+import { Nav, Navbar, Jumbotron, Carousel, Media } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
   return (
     <div className="App">
-          <Navbar bg="primary" variant="dark">
-    <Navbar.Brand href="#home">Home</Navbar.Brand>
-    <Nav className="mr-auto">
-      <Nav.Link href="#Bio">Bio</Nav.Link>
-      <Nav.Link href="#features">Projects</Nav.Link>
-      <Nav.Link href="#pricing">Resume</Nav.Link>
-    </Nav>
-    <Form inline>
-      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-light">Search</Button>
-    </Form>
-  </Navbar>
-    
-  
-      <h1>Welcome to Jordans Porfolio</h1>
-   <Button variant="primary">Primary</Button>{' '}
+      <Navbar bg="primary" variant="dark" sticky="top">
+        <Navbar.Brand href="#home">Home</Navbar.Brand>
+        <Nav className="mr-auto">
+          <Nav.Link href="#Bio">Bio</Nav.Link>
+          <Nav.Link href="#Projects">Projects</Nav.Link>
+          <Nav.Link href="#Resume">Resume</Nav.Link>
+        </Nav>
+      </Navbar>
+
+
+      <h1>The Greatest Porfolio EVER</h1>
+      <Jumbotron>
+        <h3>Welcome to my portfolio! </h3>
+        <p>
+          This is where your going to learn everything great about me, Jordan Roenitz! You can learn fun fats about me, see projects I have done, see previous work history, and even learn how to get in touch with me!
+  </p>
+      </Jumbotron>
+
+      <Media>
+  <img
+    width={200}
+    height={200}
+    className="mr-3"
+    src="https://media-exp1.licdn.com/dms/image/C4E03AQHPQV_DwjQHsA/profile-displayphoto-shrink_200_200/0?e=1598486400&v=beta&t=oL_ZDaznjoOgtoqIHE3H-0kgIEnsO4ugJ5UYMJdZP20"
+    alt="Its me, Jordan"
+  />
+  <Media.Body>
+    <h5>Fun Jordan Facts:</h5>
+    <ul>
+   <li>-I am a recent graduate of University of Texas Austin's Full Stack Web Devolopment program!</li> 
+   <li>-I am currently and will forever be learning something new and constantly being impressed with how things work and the functionality of even the simplest of things.</li> 
+   <li>-Born in good ol' Sheboygan, WI and lived there till I moved to Milwaukee, WI to get my Marketing Degree</li> 
+   <li>-I am obsessed with traveling, and everything outdoors</li> 
+   </ul>
+   
+   
+  </Media.Body>
+</Media>
+
     </div>
   );
 }
