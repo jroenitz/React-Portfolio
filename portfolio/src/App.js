@@ -28,27 +28,83 @@ function App() {
       </Jumbotron>
 
       <Media>
-  <img
-    width={200}
-    height={200}
-    className="mr-3"
-    src="https://media-exp1.licdn.com/dms/image/C4E03AQHPQV_DwjQHsA/profile-displayphoto-shrink_200_200/0?e=1598486400&v=beta&t=oL_ZDaznjoOgtoqIHE3H-0kgIEnsO4ugJ5UYMJdZP20"
-    alt="Its me, Jordan"
-  />
-  <Media.Body>
-    <h5>Fun Jordan Facts:</h5>
-    <ul>
-   <li>-I am a recent graduate of University of Texas Austin's Full Stack Web Devolopment program!</li> 
-   <li>-I am currently and will forever be learning something new and constantly being impressed with how things work and the functionality of even the simplest of things.</li> 
-   <li>-Born in good ol' Sheboygan, WI and lived there till I moved to Milwaukee, WI to get my Marketing Degree</li> 
-   <li>-I am obsessed with traveling, and everything outdoors</li> 
-   </ul>
-   
-   
-  </Media.Body>
-</Media>
+        <img
+          width={200}
+          height={200}
+          className="mr-3"
+          src="https://media-exp1.licdn.com/dms/image/C4E03AQHPQV_DwjQHsA/profile-displayphoto-shrink_200_200/0?e=1598486400&v=beta&t=oL_ZDaznjoOgtoqIHE3H-0kgIEnsO4ugJ5UYMJdZP20"
+          alt="Its me, Jordan"
+        />
+        <Media.Body>
+          <h5>Fun Jordan Facts:</h5>
+          <ul class="facts">
+            <li>-I am a recent graduate of University of Texas Austin's Full Stack Web Devolopment program!</li>
+            <li>-I am currently and will forever be learning something new and constantly being impressed with how things work and the functionality of even the simplest of things.</li>
+            <li>-Born in good ol' Sheboygan, WI and lived there till I moved to Milwaukee, WI to get my Marketing Degree</li>
+            <li>-I am obsessed with traveling, and everything outdoors</li>
+          </ul>
+
+
+        </Media.Body>
+      </Media>
+
+      function ControlledCarousel() {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+
+  return (
+    <Carousel activeIndex={index} onSelect={handleSelect}>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="holder.js/800x400?text=First slide&bg=373940"
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="holder.js/800x400?text=Second slide&bg=282c34"
+          alt="Second slide"
+        />
+
+        <Carousel.Caption>
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="holder.js/800x400?text=Third slide&bg=20232a"
+          alt="Third slide"
+        />
+
+        <Carousel.Caption>
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+  );
+}
+
+render(<ControlledCarousel />);
 
     </div>
+
+
+
+
   );
 }
 
