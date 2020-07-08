@@ -48,59 +48,47 @@ function App() {
         </Media.Body>
       </Media>
 
-      function ControlledCarousel() {
-  const [index, setIndex] = useState(0);
+      <Carousel>
+  <Carousel.Item>
+    <img
+      className="Digital class slide"
+      src="http://via.placeholder.com/800x400"
+      alt="Digital Class"
+    />
+    <Carousel.Caption>
+      <h3>Digital Class</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="W4 side"
+      src="https://media.istockphoto.com/photos/young-brave-divers-couple-jumping-off-cliff-into-ocean-picture-id909195692"
+      alt="W4"
+    />
 
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
+    <Carousel.Caption>
+      <h3>W4</h3>
+      <p>These photos are originally set at 800x400.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="Lunch and wag slide"
+      src="https://media.istockphoto.com/photos/man-on-an-adventure-exploring-a-lake-and-walking-a-suspension-bridge-picture-id903015102"
+      alt="Lunch and Wag"
+    />
 
-  return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
-          alt="Second slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-  );
-}
-
-render(<ControlledCarousel />);
+    <Carousel.Caption>
+      <h3>Lunch and Wag</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
+      
 
     </div>
+    
 
 
 
