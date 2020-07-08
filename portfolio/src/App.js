@@ -52,7 +52,7 @@ function App() {
   <Carousel.Item>
     <img
       className="Digital class slide"
-      src="http://via.placeholder.com/800x400"
+      src="https://i.imgur.com/KGi6JHZ.png?1"
       alt="Digital Class"
     />
     <Carousel.Caption>
@@ -63,7 +63,7 @@ function App() {
   <Carousel.Item>
     <img
       className="W4 side"
-      src="https://media.istockphoto.com/photos/young-brave-divers-couple-jumping-off-cliff-into-ocean-picture-id909195692"
+      src="https://i.imgur.com/k2XS3PO.png?1"
       alt="W4"
     />
 
@@ -75,13 +75,14 @@ function App() {
   <Carousel.Item>
     <img
       className="Lunch and wag slide"
-      src="https://media.istockphoto.com/photos/man-on-an-adventure-exploring-a-lake-and-walking-a-suspension-bridge-picture-id903015102"
+      src="https://i.imgur.com/v2LCdQv.png?1"
       alt="Lunch and Wag"
     />
 
     <Carousel.Caption>
       <h3>Lunch and Wag</h3>
       <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
