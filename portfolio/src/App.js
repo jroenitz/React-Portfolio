@@ -15,17 +15,22 @@ function App() {
           <Nav.Link href="#Bio">Bio</Nav.Link>
           <Nav.Link href="#Projects">Projects</Nav.Link>
           <Nav.Link href="#Resume">Resume</Nav.Link>
+          <Nav.Link href="#Contact">Get in touch with me</Nav.Link>
         </Nav>
       </Navbar>
 
 
       <h1>The Greatest Porfolio EVER</h1>
+      <br/> <br/> 
+
       <Jumbotron>
         <h3>Welcome to my portfolio! </h3>
         <p>
           This is where your going to learn everything great about me, Jordan Roenitz! You can learn fun fats about me, see projects I have done, see previous work history, and even learn how to get in touch with me!
   </p>
       </Jumbotron>
+
+      <br/> <br/> 
 
       <Media>
         <img
@@ -48,6 +53,8 @@ function App() {
         </Media.Body>
       </Media>
 
+      <br/> <br/>
+
       <Carousel>
   <Carousel.Item>
     <img
@@ -56,8 +63,8 @@ function App() {
       alt="Digital Class"
     />
     <Carousel.Caption>
-      <h3>Digital Class</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h3 style={{color: "gray"}}>Digital Class</h3>
+      <p style={{color: "red"}}>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -68,8 +75,8 @@ function App() {
     />
 
     <Carousel.Caption>
-      <h3>W4</h3>
-      <p>These photos are originally set at 800x400.</p>
+      <h3 style={{color: "blue"}}>W4</h3>
+      <p style={{color: "red"}}>These photos are originally set at 800x400.</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -80,14 +87,20 @@ function App() {
     />
 
     <Carousel.Caption>
-      <h3>Lunch and Wag</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h3 style={{color: "gray"}}>Lunch and Wag</h3>
+      <p style={{color: "red"}}>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
       
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
       
+     <br/> <br/> 
 
+<img
+      className="Resume"
+      src="https://i.imgur.com/sJCxmM5.png?1"
+      alt="Resume"
+    />
     </div>
     
 
