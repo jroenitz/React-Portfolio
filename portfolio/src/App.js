@@ -101,11 +101,16 @@ function App() {
       src="https://i.imgur.com/sJCxmM5.png?1"
       alt="Resume"
     />
-    </div>
+
+    <br/> <br/>
+
     
+  <footer className="footer">
+    <p>Some footer nonsense!</p>
+  </footer>
 
 
-
+    </div>
 
   );
 }
