@@ -64,7 +64,7 @@ function App() {
     />
     <Carousel.Caption>
       <h3 style={{color: "gray"}}>Digital Class</h3>
-      <p style={{color: "red"}}>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <p style={{color: "gray"}}>This is a program that teacher and students to help with online education. It has features such as quiz building and grading as well as analytics on each test for teachers, as well as students being able to jump online and take the quiz and see their grades.</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -75,7 +75,7 @@ function App() {
     />
 
     <Carousel.Caption>
-      <h3 style={{color: "blue"}}>W4</h3>
+      <h3 style={{color: "red"}}>W4</h3>
       <p style={{color: "red"}}>These photos are originally set at 800x400.</p>
     </Carousel.Caption>
   </Carousel.Item>
@@ -87,7 +87,7 @@ function App() {
     />
 
     <Carousel.Caption>
-      <h3 style={{color: "gray"}}>Lunch and Wag</h3>
+      <h3 style={{color: "red"}}>Lunch and Wag</h3>
       <p style={{color: "red"}}>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
       
     </Carousel.Caption>
